@@ -1,0 +1,89 @@
+@import "../variables/variables.scss";
+
+.profile {
+  border-radius: 5px;
+  padding: 2em;
+  width: 100%;
+  margin: 0 0 2em 0;
+}
+.profile_avatar-wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px 15px -15px #000;
+  }
+  svg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 100%;
+    width: 50%;
+    opacity: 0;
+    text-align: center;
+    transition: all 0.3s ease;
+    &:hover {
+      transition: all 0.3s ease;
+      opacity: 0.9;
+    }
+  }
+}
+.profile_avatar-input {
+  display: none;
+}
+.profile_input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bg-upload {
+  background: $blue !important;
+  color: #fff;
+}
+.select {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  background-color: "#e0e0e";
+  padding: 1em;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  width: 300px;
+
+}
+
+
+
+
+@include for-desktop {
+  .select  {
+      width: 370px;
+      height: 61px;
+      margin-top: 25px;
+      margin-right: 35px;
+      
+      }
+      .button {
+          align-self: center;
+      }
+      .input1{
+          display: flex;
+          justify-content: space-between;
+          
+      }
+      .input2{
+        align-self: center;
+        margin-left: 205px;
+      }
+}

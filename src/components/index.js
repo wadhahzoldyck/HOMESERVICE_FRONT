@@ -1,0 +1,5 @@
+export {default as Home} from './home/Home'
+export {default as Body} from './home/Body'
+export {default as Header} from './Header'
+export {default as Navbar} from './Navbar'
+export {default as Footer} from './Footer'
